@@ -11,7 +11,7 @@
 
     <script src="home_files/main.js"></script>
 
-    <title>Sinovac Vaccine | COVID-19 Info Center</title>
+    <title>Checking registration | COVID-19 Info Center</title>
     <meta name="description" content="add vaccine registration form">
     <meta name="keywords" content="register for covid-19 vaccine">
 
@@ -88,7 +88,7 @@
                             Vaccine Registration </a>
                     </li>
                     
-                      <li class="nav-item" id="menu5">
+                    <li class="nav-item" id="menu5">
                         <a class="nav-link" href="check_registration.html">
                             Check Vaccine Registration </a>
                     </li>
@@ -102,8 +102,8 @@
     if (file_exists($_POST['input_nric'] . '.txt')) {
         echo '<h3 style="text-align:center"> You are already registered!</h3>';
     } else {
-        echo '<h3>You have not registered!</h3><br>';
-        echo '<a href ="register.html">Register here</a>';
+        echo '<h3 style="text-align:center">You have not registered!</h3><br>';
+        echo '<p style="text-align:center"><a href ="register.html">Register here</a></p>';
     }
     ?>
 </body>

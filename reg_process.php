@@ -11,7 +11,7 @@
 
     <script src="home_files/main.js"></script>
 
-    <title>Sinovac Vaccine | COVID-19 Info Center</title>
+    <title>Processing registration | COVID-19 Info Center</title>
     <meta name="description" content="add vaccine registration form">
     <meta name="keywords" content="register for covid-19 vaccine">
 
@@ -88,7 +88,7 @@
                             Vaccine Registration </a>
                     </li>
                     
-                      <li class="nav-item" id="menu5">
+                    <li class="nav-item" id="menu5">
                         <a class="nav-link" href="check_registration.html">
                             Check Vaccine Registration </a>
                     </li>
