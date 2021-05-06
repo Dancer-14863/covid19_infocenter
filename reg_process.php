@@ -47,9 +47,11 @@
     <div class="container-fluid site-title">
         <!-- <div class=""> -->
         <div class="container">
-            <div class="row">
-                <h3>COVID-19 Info Center</h3>
+             <div class="row justify-content-between">
+                <h3 class="col-4">COVID-19 Info Center</h3>
+                <h4 class="col-4 text-right">L1-team08</h4>
             </div>
+            
         </div>
     </div>
 
@@ -85,6 +87,11 @@
                         <a class="nav-link" href="register.html">
                             Vaccine Registration </a>
                     </li>
+                    
+                      <li class="nav-item" id="menu5">
+                        <a class="nav-link" href="check_registration.html">
+                            Check Vaccine Registration </a>
+                    </li>
 
                 </ul>
             </nav>
@@ -95,12 +102,12 @@
     // echo '<br>';
     // echo $_POST['input_nric'];
     if (file_exists($_POST['input_nric'] . '.txt')) {     //Check for filename with given nric
-        echo '<h3>You are already registered!</h3>';
+        echo '<h3 style="text-align:center"> You are already registered!</h3>';
     } else {   //filename not found, write to file
         $content_to_write = "Name: " . $_POST['input_name'] . "\n";
         $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
         file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
-        echo '<h3 style="text-align:center">Registration is successful!</h3>';
+        echo '<h3 style="text-align:center"> Registration is successful </h3>';
     }
     ?>
 </body>
